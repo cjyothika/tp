@@ -9,7 +9,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ## Project team
 
-### Jyothika 
+### Jyothika
 
 <img src="images/cjyothika.png" width="200px">
 
