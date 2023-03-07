@@ -1,6 +1,6 @@
-package seedu.modtrek.ui.cli_section;
+package seedu.modtrek.ui.cli;
 
-import static seedu.modtrek.ui.cli_section.CommandBox.ERROR_STYLE_CLASS;
+import static seedu.modtrek.ui.cli.CommandBox.ERROR_STYLE_CLASS;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -17,7 +17,7 @@ import seedu.modtrek.ui.UiPart;
  * The type Cli section.
  */
 public class CliSection extends UiPart<Region> {
-    private static final String FXML = "cli_section/CliSection.fxml";
+    private static final String FXML = "cli/CliSection.fxml";
 
     private CommandExecutor commandExecutor;
 

@@ -1,4 +1,4 @@
-package seedu.modtrek.ui.module_list;
+package seedu.modtrek.ui.modulelist;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -16,7 +16,7 @@ import seedu.modtrek.ui.UiPart;
  * The type Module list.
  */
 public class ModuleList extends UiPart<Region> {
-    private static final String FXML = "module_list/ModuleList.fxml";
+    private static final String FXML = "modulelist/ModuleList.fxml";
 
     @FXML
     private VBox moduleList;

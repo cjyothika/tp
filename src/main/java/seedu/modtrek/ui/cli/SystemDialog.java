@@ -1,4 +1,4 @@
-package seedu.modtrek.ui.cli_section;
+package seedu.modtrek.ui.cli;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -10,7 +10,7 @@ import seedu.modtrek.ui.UiPart;
  * The type System dialog.
  */
 public class SystemDialog extends UiPart<Region> {
-    private static final String FXML = "cli_section/SystemDialog.fxml";
+    private static final String FXML = "cli/SystemDialog.fxml";
 
     @FXML
     private HBox systemDialogContainer;

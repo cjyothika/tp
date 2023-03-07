@@ -1,4 +1,4 @@
-package seedu.modtrek.ui.module_list;
+package seedu.modtrek.ui.modulelist;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -12,7 +12,7 @@ import seedu.modtrek.ui.UiPart;
  * The type Module group.
  */
 public class ModuleGroup extends UiPart<Region> {
-    private static final String FXML = "module_list/ModuleGroup.fxml";
+    private static final String FXML = "modulelist/ModuleGroup.fxml";
 
     @FXML
     private Label moduleGroupTitle;
@@ -39,7 +39,6 @@ public class ModuleGroup extends UiPart<Region> {
      */
     public void displayModuleCards(ObservableList<Module> modules) {
         int numModules = modules.toArray().length;
-
         /*
         * Position variables to keep track of the current free position (col, row) to add a ModuleCard on the GridPane.
         *  ModuleCards are displayed on a `r by 3` grid, where r is the number of rows and 3 is the number of columns.
@@ -48,7 +47,6 @@ public class ModuleGroup extends UiPart<Region> {
         int maxCols = 3;
         int col = 0;
         int row = 0;
-
         for (int i = 0; i < numModules; i++) {
             Module currModule = modules.get(i);
             ModuleCard moduleCard = new ModuleCard(currModule);

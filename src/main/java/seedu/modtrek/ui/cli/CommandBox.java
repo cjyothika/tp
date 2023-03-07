@@ -1,4 +1,4 @@
-package seedu.modtrek.ui.cli_section;
+package seedu.modtrek.ui.cli;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

@@ -1,7 +1,7 @@
-package seedu.modtrek.ui.module_list;
+package seedu.modtrek.ui.modulelist;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -17,7 +17,7 @@ import seedu.modtrek.ui.UiPart;
  * The type Module card.
  */
 public class ModuleCard extends UiPart<Region> {
-    private static final String FXML = "module_list/ModuleCard.fxml";
+    private static final String FXML = "modulelist/ModuleCard.fxml";
 
     @FXML
     private Label moduleCardCode;
@@ -43,7 +43,7 @@ public class ModuleCard extends UiPart<Region> {
         moduleCardCredits.setText(module.getCredit().toString() + "MC");
         moduleCardGrade.setText(module.getGrade().toString());
 
-        List<Tag> tags = new ArrayList(module.getTags());
+        List<Tag> tags = module.getTags().stream().collect(Collectors.toList());
         for (int i = 0; i < tags.size(); i++) {
             String tagName = tags.get(i).tagName;
             addTag(tagName, "red");
