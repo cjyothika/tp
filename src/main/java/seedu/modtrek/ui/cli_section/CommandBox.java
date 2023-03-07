@@ -1,4 +1,4 @@
-package seedu.modtrek.ui;
+package seedu.modtrek.ui.cli_section;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -7,6 +7,7 @@ import javafx.scene.layout.Region;
 import seedu.modtrek.logic.commands.CommandResult;
 import seedu.modtrek.logic.commands.exceptions.CommandException;
 import seedu.modtrek.logic.parser.exceptions.ParseException;
+import seedu.modtrek.ui.UiPart;
 
 /**
  * The UI component that is responsible for receiving user command inputs.
