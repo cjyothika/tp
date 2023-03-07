@@ -12,7 +12,6 @@ import seedu.modtrek.logic.commands.CommandResult;
 import seedu.modtrek.logic.commands.exceptions.CommandException;
 import seedu.modtrek.logic.parser.exceptions.ParseException;
 import seedu.modtrek.ui.cli_section.CliSection;
-import seedu.modtrek.ui.cli_section.CommandBox;
 import seedu.modtrek.ui.graphics_section.GraphicsSection;
 
 /**

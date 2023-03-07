@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javafx.fxml.FXML;
-
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 import javafx.scene.layout.FlowPane;
@@ -14,6 +13,9 @@ import seedu.modtrek.model.module.Module;
 import seedu.modtrek.model.tag.Tag;
 import seedu.modtrek.ui.UiPart;
 
+/**
+ * The type Module card.
+ */
 public class ModuleCard extends UiPart<Region> {
     private static final String FXML = "module_list/ModuleCard.fxml";
 
@@ -29,6 +31,11 @@ public class ModuleCard extends UiPart<Region> {
     @FXML
     private FlowPane moduleCardTagGroup;
 
+    /**
+     * Instantiates a new Module card.
+     *
+     * @param module the module
+     */
     public ModuleCard(Module module) {
         super(FXML);
 

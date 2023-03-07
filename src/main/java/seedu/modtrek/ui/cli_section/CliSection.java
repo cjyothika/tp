@@ -13,6 +13,9 @@ import seedu.modtrek.logic.commands.exceptions.CommandException;
 import seedu.modtrek.logic.parser.exceptions.ParseException;
 import seedu.modtrek.ui.UiPart;
 
+/**
+ * The type Cli section.
+ */
 public class CliSection extends UiPart<Region> {
     private static final String FXML = "cli_section/CliSection.fxml";
 
@@ -27,6 +30,11 @@ public class CliSection extends UiPart<Region> {
     @FXML
     private TextField cliInput;
 
+    /**
+     * Instantiates a new Cli section.
+     *
+     * @param commandExecutor the command executor
+     */
     public CliSection(CommandExecutor commandExecutor) {
         super(FXML);
 
@@ -64,6 +72,12 @@ public class CliSection extends UiPart<Region> {
         cliScreen.getChildren().add(userDialog.getRoot());
     }
 
+    /**
+     * Add system dialog.
+     *
+     * @param text      the text
+     * @param isSuccess the is success
+     */
     public void addSystemDialog(String text, boolean isSuccess) {
         SystemDialog systemDialog = new SystemDialog(text, isSuccess);
         cliScreen.getChildren().add(systemDialog.getRoot());
@@ -97,7 +111,11 @@ public class CliSection extends UiPart<Region> {
         /**
          * Executes the command and returns the result.
          *
-         * @see seedu.modtrek.logic.Logic#execute(String)
+         * @param commandText the command text
+         * @return the command result
+         * @throws CommandException the command exception
+         * @throws ParseException   the parse exception
+         * @see seedu.modtrek.logic.Logic#execute(String) seedu.modtrek.logic.Logic#execute(String)
          */
         CommandResult execute(String commandText) throws CommandException, ParseException;
     }

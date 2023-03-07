@@ -6,6 +6,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import seedu.modtrek.ui.UiPart;
 
+/**
+ * The type System dialog.
+ */
 public class SystemDialog extends UiPart<Region> {
     private static final String FXML = "cli_section/SystemDialog.fxml";
 
@@ -18,6 +21,12 @@ public class SystemDialog extends UiPart<Region> {
     @FXML
     private HBox systemDialogResponseIndicator;
 
+    /**
+     * Instantiates a new System dialog.
+     *
+     * @param text      the text
+     * @param isSuccess the is success
+     */
     public SystemDialog(String text, boolean isSuccess) {
         super(FXML);
 
