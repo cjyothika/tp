@@ -107,6 +107,7 @@ public class MainWindow extends UiPart<Stage> {
             CommandResult commandResult = logic.execute(commandText);
             logger.info("Result: " + commandResult.getFeedbackToUser());
             cliSection.addSystemDialog(commandResult.getFeedbackToUser(), true);
+            graphicsSection.displayModuleList(logic.getFilteredModuleList());
 
             if (commandResult.isExit()) {
                 handleExit();
