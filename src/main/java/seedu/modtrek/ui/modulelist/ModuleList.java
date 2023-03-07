@@ -1,4 +1,4 @@
-package seedu.modtrek.ui.module_list;
+package seedu.modtrek.ui.modulelist;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,17 +12,30 @@ import javafx.scene.layout.VBox;
 import seedu.modtrek.model.module.Module;
 import seedu.modtrek.ui.UiPart;
 
+/**
+ * The type Module list.
+ */
 public class ModuleList extends UiPart<Region> {
-    private static final String FXML = "module_list/ModuleList.fxml";
+    private static final String FXML = "modulelist/ModuleList.fxml";
 
     @FXML
     private VBox moduleList;
 
+    /**
+     * Instantiates a new Module list.
+     *
+     * @param modules the modules
+     */
     public ModuleList(ObservableList<Module> modules) {
         super(FXML);
         displayModuleGroup(modules);
     }
 
+    /**
+     * Display module group.
+     *
+     * @param modules the modules
+     */
     public void displayModuleGroup(ObservableList<Module> modules) {
         // TODO: render ModuleGroup dynamically
         Set<String> semYears = new HashSet<>();
