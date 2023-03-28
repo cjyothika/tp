@@ -155,8 +155,6 @@ The `Model` component,
 
 <img src="images/BetterModelClassDiagram.png" width="450" />
 
-</div>
-
 
 ### Storage component
 
@@ -643,7 +641,7 @@ Use case ends.
 
   Use case ends.
 
-**Use case: View a graph of degree progress**
+### Use case: View a graph of degree progress
 
 
 **MSS**
